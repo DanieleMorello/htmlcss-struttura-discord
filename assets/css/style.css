@@ -142,4 +142,16 @@ nav ul li a {
 /* #endregion Main */
 
 /* #region Footer */
+.debug footer,
+.debug  #footer_bottom {
+  background-color: var(--ds_dark);
+}
+
+#footer_top {
+  border-bottom: 5px solid var(--ds_gray);
+}
+
+#footer_top .big_container {
+  margin-top: 0.6rem;
+}
 /* #endregion Footer */
