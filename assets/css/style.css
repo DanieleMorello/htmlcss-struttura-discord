@@ -1,14 +1,13 @@
 /* #region Common */
 /* Root */
- :root
-{
+:root {
   --ds_dark: #000000;
-  --ds_nav: #DAA520;
-  --ds_blu-dark: #00008B;
-  --ds_lavanda: #EE82EE;
-  --ds_primary: #1E90FF;
-  --ds_secondary: #FFC0CB;
-} 
+  --ds_nav: #daa520;
+  --ds_blu-dark: #00008b;
+  --ds_lavanda: #ee82ee;
+  --ds_primary: #1e90ff;
+  --ds_secondary: #ffc0cb;
+}
 
 /* CSS RESET */
 * {
@@ -22,6 +21,7 @@
 .flex {
   display: flex;
 }
+
 /* #endregion Utility Classes */
 
 /* #region Header */
@@ -33,13 +33,15 @@
 }
 
 .debug #app_header {
-    justify-content: center;
-    align-items: center;
-    background-color: #ADD8E6;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #add8e6;
 }
 
 .debug .container {
-    border: 2px dashed var(--ds_dark);
+  border: 2px dashed var(--ds_dark);
 }
 
 nav ul {
@@ -52,7 +54,7 @@ nav ul {
   border-right: 2px dashed var(--ds_dark);
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   /* padding: .5rem; */
 }
@@ -69,7 +71,7 @@ nav ul li a{
 #login {
   display: flex;
   align-self: center;
-  margin: .7rem .5rem;
+  margin: 0.7rem 0.5rem;
   flex-grow: 1;
 }
 /* #endregion Header */
@@ -115,5 +117,3 @@ article {
 
 /* #region Footer */
 /* #endregion Footer */
-
-
