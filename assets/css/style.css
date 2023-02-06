@@ -2,6 +2,7 @@
 /* Root */
 :root {
   --ds_dark: #000000;
+  --ds_light: #ffffff;
   --ds_nav: #daa520;
   --ds_blu-dark: #00008b;
   --ds_lavanda: #ee82ee;
@@ -94,7 +95,7 @@ nav ul li a {
 
 .small_container {
   background-color: var(--ds_lavanda);
-  width: calc((100% / 12) * 10);
+  width: calc((100% / 12) * 6);
   height: 20rem;
   margin: 2.5rem auto;
   border: 2px dashed var(--ds_dark);
@@ -102,6 +103,18 @@ nav ul li a {
 /* #endregion Blu */
 
 /* #region White */
+.debug #section_2 {
+  background-color: var(--ds_light);
+  height: var(--height_section);
+}
+
+.blue_container {
+  background-color: var(--ds_primary);
+}
+
+.pink_container {
+  background-color: var(--ds_secondary);
+}
 
 /* #endregion White */
 
