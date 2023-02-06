@@ -3,6 +3,7 @@
 :root {
   --ds_dark: #000000;
   --ds_light: #ffffff;
+  --ds_gray: gray;
   --ds_nav: #daa520;
   --ds_blu-dark: #00008b;
   --ds_lavanda: #ee82ee;
@@ -28,7 +29,7 @@
 
 /* #region Header */
 .container {
-  margin: 1rem 0;
+  margin: 1rem auto;
   width: 1140px;
 }
 
@@ -106,18 +107,31 @@ nav ul li a {
 .debug #section_2 {
   background-color: var(--ds_light);
   height: var(--height_section);
+  margin: 2.5rem auto;
+  justify-content: center;
 }
 
 .blue_container {
   background-color: var(--ds_primary);
+  flex-grow: 2;
+  height: 23rem;
+  border: 2px dashed var(--ds_dark);
 }
 
 .pink_container {
   background-color: var(--ds_secondary);
+  flex-grow: 1;
+  height: 23rem;
+  border: 2px dashed var(--ds_dark);
 }
-
 /* #endregion White */
 
+/* #region Gray */
+.debug #section_3 {
+  background-color: var(--ds_gray);
+  height: var(--height_section);
+}
+/* endregion Gray */
 /* #endregion Main */
 
 /* #region Footer */
