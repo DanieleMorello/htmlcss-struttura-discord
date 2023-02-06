@@ -7,6 +7,7 @@
   --ds_lavanda: #ee82ee;
   --ds_primary: #1e90ff;
   --ds_secondary: #ffc0cb;
+  --height_section: 25rem;
 }
 
 /* CSS RESET */
@@ -28,13 +29,11 @@
 .container {
   margin: 1rem 0;
   width: 1140px;
-  justify-content: space-between;
-  background-color: var(--ds_nav);
 }
 
 .debug #app_header {
-  padding-top: .2rem;
-  padding-bottom: .2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   justify-content: center;
   align-items: center;
   background-color: #add8e6;
@@ -42,6 +41,11 @@
 
 .debug .container {
   border: 2px dashed var(--ds_dark);
+}
+
+nav {
+  background-color: var(--ds_nav);
+  justify-content: space-between;
 }
 
 nav ul {
@@ -78,39 +82,27 @@ nav ul li a {
 
 /* #region Main */
 /* #region Blu */
-.blue_section {
+#section_1 {
   background-color: var(--ds_blu-dark);
-  height: 20rem;
+  height: var(--height_section);
 }
 
-.blue_section .flex_container {
+.big_container {
+  width: calc((100% / 12) * 8);
+  height: 30rem;
+}
+
+.small_container {
   background-color: var(--ds_lavanda);
-  height: 10rem;
+  width: calc((100% / 12) * 10);
+  height: 20rem;
+  margin: 2.5rem auto;
+  border: 2px dashed var(--ds_dark);
 }
 /* #endregion Blu */
 
 /* #region White */
-.white_section {
-  display: flex;
-}
 
-article {
-  display: flex;
-}
-
-.blue_div {
-  border: 1px dashed var(--ds_dark);
-  background-color: var(--ds_primary);
-  height: 10rem;
-  width: 70%;
-}
-
-.pink_div {
-  border: 1px dashed var(--ds_dark);
-  background-color: var(--ds_secondary);
-  height: 10rem;
-  width: 30%;
-}
 /* #endregion White */
 
 /* #endregion Main */
