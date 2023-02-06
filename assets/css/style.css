@@ -5,6 +5,7 @@
   --ds_light: #ffffff;
   --ds_gray: #D3D3D3;
   --ds_nav: #daa520;
+  --ds_header: #add8e6;
   --ds_blu-dark: #00008b;
   --ds_grennwater: #20B2AA;
   --ds_light-green: #7FFFD4;
@@ -42,7 +43,7 @@
   padding-bottom: 0.2rem;
   justify-content: center;
   align-items: center;
-  background-color: #add8e6;
+  background-color: var(--ds_header);
 }
 
 .debug .container {
@@ -66,7 +67,6 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  /* padding: .5rem; */
 }
 
 #logo {
@@ -132,7 +132,7 @@ nav ul li a {
 }
 
 #section_3 {
-  background-color: gray;
+  background-color: var(--ds_gray);
   margin-top: 2rem;
 }
 
