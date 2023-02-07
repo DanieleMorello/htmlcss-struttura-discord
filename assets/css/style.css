@@ -190,6 +190,7 @@ nav ul li a {
   height: 23rem;
   border: 2px dashed var(--ds_light);
 }
+
 .greenwater_container {
   flex-grow: 1;
 }
@@ -202,12 +203,16 @@ nav ul li a {
   background-color: var(--ds_light-green);
 }
 
-.debug #footer_bottom #logo,
-#footer_bottom #button {
+#logo_footer {
+  margin: 0.7rem 0;
+}
+
+.debug #logo_footer,
+.debug #button {
   background-color: var(--ds_pink);
 }
 
-#footer_bottom #logo,
+#footer_bottom #logo_footer,
 #footer_bottom #button {
   align-self: center;
 }
