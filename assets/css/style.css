@@ -14,7 +14,6 @@
   --ds_dark-lavanda: #F08080;
   --ds_primary: #1e90ff;
   --ds_secondary: #ffc0cb;
-  --height_section: 25rem;
 }
 
 /* CSS RESET */
@@ -87,7 +86,7 @@ nav ul li a {
 /* #endregion Header */
 
 /* #region Main */
-/* #region Blu */
+/* #region Section 1 */
 #section_1 {
   background-color: var(--ds_blu-dark);
   height: var(--height_section);
@@ -100,9 +99,9 @@ nav ul li a {
   margin: 2.5rem auto;
   border: 2px dashed var(--ds_dark);
 }
-/* #endregion Blu */
+/* #endregion Section 1 */
 
-/* #region White */
+/* #region Sectio 2 */
 .debug #section_2 {
   background-color: var(--ds_light);
   height: var(--height_section);
@@ -110,44 +109,60 @@ nav ul li a {
   justify-content: center;
 }
 
-.blue_container {
+.debug .blue_container {
   background-color: var(--ds_primary);
+  height: 23rem;
+  border: 2px dashed var(--ds_dark);
+}
+/* #endregion Section 2 */
+
+/* #startregion Section 3 */
+#section_3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+/* endregion Section 3 */
+
+/* #startregion Section 4 */
+#section_4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blue_container {
   flex-grow: 2;
+}
+
+.debug .pink_container {
+  background-color: var(--ds_secondary);
   height: 23rem;
   border: 2px dashed var(--ds_dark);
 }
 
 .pink_container {
-  background-color: var(--ds_secondary);
   flex-grow: 1;
-  height: 23rem;
-  border: 2px dashed var(--ds_dark);
 }
-/* #endregion White */
+/* #endregion Section 4 */
 
-/* #region Gray */
-.debug #section_3 {
+/* #region Section 5 */
+.debug #section_3,
+.debug #section_5{
   background-color: var(--ds_gray);
   height: var(--height_section);
 }
 
-#section_3 {
-  background-color: var(--ds_gray);
-  margin-top: 2rem;
-}
 
-#section_5 {
-  background-color: var(--ds_gray);
+.debug .big_container {
+  background-color: green;
+  height: 40rem;
+  border: 2px dashed var(--ds_dark);
 }
 
 .big_container {
   width: calc((100% / 12) * 8);
-  height: 40rem;
-  background-color: green;
   margin: 2.5rem auto;
-  border: 2px dashed var(--ds_dark);
 }
-/* endregion Gray */
+/* endregion Section 5 */
 /* #endregion Main */
 
 /* #region Footer */
@@ -159,32 +174,41 @@ nav ul li a {
   border-bottom: 5px solid var(--ds_gray);
 }
 
-.dark_pink-container {
+.debug .dark_pink-container {
   background-color: var(--ds_dark-lavanda);
-  flex-grow: 2;
   height: 23rem;
   border: 2px dashed var(--ds_dark);
+}
+
+.dark_pink-container {
+  flex-grow: 2;
   margin-bottom: 1.5rem;
 }
 
-.greenwater_container {
+.debug .greenwater_container {
   background-color: var(--ds_grennwater);
-  flex-grow: 1;
   height: 23rem;
   border: 2px dashed var(--ds_light);
+}
+.greenwater_container {
+  flex-grow: 1;
 }
 
 #footer_top .big_container {
   margin-top: 0.6rem;
 }
 
-#footer_bottom .container{
+.debug #footer_bottom .container{
   background-color: var(--ds_light-green);
+}
+
+.debug #footer_bottom #logo,
+#footer_bottom #button {
+  background-color: var(--ds_pink);
 }
 
 #footer_bottom #logo,
 #footer_bottom #button {
-  background-color: var(--ds_pink);
-  flex-grow: 1;
+  align-self: center;
 }
 /* #endregion Footer */
